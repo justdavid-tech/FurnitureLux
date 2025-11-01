@@ -4,51 +4,67 @@ import { CheckCircle, Heart, Leaf, Star, Award } from "lucide-react";
 function About() {
   return (
     <section className="bg-white text-gray-800">
-      <div className="relative w-full h-[80vh] overflow-hidden">
-        <img
-          src="/asset/images/about-bg.jpg"
-          alt="LuxFurnish Showroom"
-          className="absolute inset-0 w-full h-full object-cover brightness-75"
-        />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 md:px-12">
-          <h1 className="text-gray-700 text-4xl md:text-6xl font-semibold tracking-tight">
-            Crafting <span className="text-brand">Luxury</span> That Feels Like Home
-          </h1>
-          <p className="text-gray-800 mt-5 text-lg max-w-3xl">
-            At LuxFurnish, we don’t just build furniture — we create experiences that
-            redefine comfort, elegance, and authenticity.
-          </p>
-        </div>
-      </div>
+<div className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
+  {/* Background Image with dark overlay */}
+  <img
+    src="/asset/images/about-bg.jpg"
+    alt="LuxFurnish Showroom"
+    className="absolute inset-0 w-full h-full object-cover brightness-75 scale-105 transition-transform duration-700 hover:scale-110"
+  />
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  {/* Text Content */}
+  <div className="relative z-10 text-center px-6 md:px-12">
+    <h1 className="text-white text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+      Crafting <span className="text-brand">Luxury</span> That Feels Like Home
+    </h1>
+    <p className="text-gray-200 mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+      At <span className="font-semibold text-brand">LuxFurnish</span>, we don’t just build
+      furniture — we curate experiences that combine timeless artistry, comfort, and
+      sophistication.
+    </p>
+
+    {/* Subtle CTA or tagline */}
+    <div className="mt-8">
+      <button className="bg-brand text-white px-8 py-3 rounded-full shadow-lg hover:bg-brand/90 transition">
+        Discover Our Story
+      </button>
+    </div>
+  </div>
+</div>
+
 
       {/* STORY SECTION */}
       <div className="max-w-6xl mx-auto px-6 md:px-12 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <img
-              src="/asset/images/workshop.jpg"
-              alt="LuxFurnish workshop"
-              className="rounded-3xl shadow-lg object-cover"
-            />
-          </div>
-          <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
-              The Art of Craftsmanship
-            </h2>
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Every LuxFurnish creation tells a story — one of craftsmanship, dedication,
-              and timeless design. From the hands of our artisans to your living space,
-              every stitch, curve, and texture is made with precision and love.
-            </p>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              We partner with global design houses and local craftsmen to deliver
-              world-class furniture that celebrates Nigerian artistry and modern luxury.
-              With sustainability at our core, every piece is made to last for
-              generations.
-            </p>
-          </div>
-        </div>
-      </div>
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+    {/* 🧾 Text Section */}
+    <div className="order-1 md:order-2">
+      <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
+        The Art of Craftsmanship
+      </h2>
+      <p className="text-gray-700 text-lg leading-relaxed mb-6">
+        Every LuxFurnish creation tells a story — one of craftsmanship, dedication,
+        and timeless design. From the hands of our artisans to your living space,
+        every stitch, curve, and texture is made with precision and love.
+      </p>
+      <p className="text-gray-700 text-lg leading-relaxed">
+        We partner with global design houses and local craftsmen to deliver
+        world-class furniture that celebrates Nigerian artistry and modern luxury.
+        With sustainability at our core, every piece is made to last for
+        generations.
+      </p>
+    </div>
+
+    {/* 🖼️ Image Section */}
+    <div className="order-2 md:order-1">
+      <img
+        src="/asset/images/workshop.jpg"
+        alt="LuxFurnish workshop"
+        className="rounded-3xl shadow-lg object-cover w-full h-64 sm:h-96 md:h-96 lg:h-96"
+      />
+    </div>
+  </div>
+</div>
 
       {/* CORE VALUES */}
       <div className="bg-gray-50 py-20">
@@ -118,7 +134,7 @@ function About() {
           </div>
           <div className="relative">
             <img
-              src="/asset/images/signature.jpg"
+              src="/asset/images/showroom-interior.jpg"
               alt="LuxFurnish showroom"
               className="rounded-3xl shadow-lg object-cover"
             />

@@ -43,7 +43,7 @@ const Navbar = () => {
           <li className="relative">
             <button
               className={`flex items-center hover:text-gray-400 transition ${
-                isActive('/categories') ? 'text-blue-600 font-semibold' : ''
+                isActive('/categories') ? 'text-brand font-semibold' : ''
               }`}
               onClick={toggleDropdown}
               onMouseEnter={() => setIsDropdownOpen(true)}
@@ -91,7 +91,7 @@ const Navbar = () => {
             <Link 
               to="/about" 
               className={`hover:text-gray-400 transition ${
-                isActive('/about') ? 'text-blue-600 font-semibold' : ''
+                isActive('/about') ? 'text-brand font-semibold' : ''
               }`}
             >
               About
@@ -102,7 +102,7 @@ const Navbar = () => {
             <Link 
               to="/blog" 
               className={`hover:text-gray-400 transition ${
-                isActive('/blog') ? 'text-blue-600 font-semibold' : ''
+                isActive('/blog') ? 'text-brand font-semibold' : ''
               }`}
             >
               Blog
@@ -112,7 +112,7 @@ const Navbar = () => {
             <Link 
               to="/contact" 
               className={`hover:text-gray-400 transition ${
-                isActive('/contact') ? 'text-blue-600 font-semibold' : ''
+                isActive('/contact') ? 'text-brand font-semibold' : ''
               }`}
             >
               Contact
@@ -149,7 +149,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/" 
-              className={`block ${isActive('/') ? 'text-blue-600 font-semibold' : ''}`}
+              className={`block ${isActive('/') ? 'text-brand font-semibold' : ''}`}
               onClick={closeMobileMenu}
             >
               Home
@@ -195,7 +195,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/about" 
-              className={`block ${isActive('/about') ? 'text-blue-600 font-semibold' : ''}`}
+              className={`block ${isActive('/about') ? 'text-brand font-semibold' : ''}`}
               onClick={closeMobileMenu}
             >
               About
@@ -204,9 +204,9 @@ const Navbar = () => {
           <li>
             <Link 
               to="/blog" 
-              className={`block ${isActive('/blog') ? 'text-blue-600 font-semibold' : ''}`}
+              className={`block ${isActive('/blog') ? 'text-brand font-semibold' : ''}`}
               onClick={closeMobileMenu}
-            > ``
+            >
               Blog
             </Link>
           </li>
