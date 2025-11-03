@@ -20,7 +20,7 @@ function About() {
     </h1>
     <p className="text-gray-200 mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
       At <span className="font-semibold text-brand">LuxFurnish</span>, we don’t just build
-      furniture — we curate experiences that combine timeless artistry, comfort, and
+      furniture, we curate experiences that combine timeless artistry, comfort, and
       sophistication.
     </p>
 

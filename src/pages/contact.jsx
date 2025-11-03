@@ -62,7 +62,7 @@ export default function ContactPage() {
             {/* Map preview (optional image or embedded map) */}
             <div className="mt-8">
               <img
-                src="/asset/images/map-placeholder.jpg"
+                src="/asset/images/showroom-interior.jpg"
                 alt="Front of LuxFurnish Showroom"
                 className="rounded-2xl object-cover w-full h-48 shadow-md"
               />

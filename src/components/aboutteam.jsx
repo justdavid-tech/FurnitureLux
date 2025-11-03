@@ -7,7 +7,7 @@ const teamData = [
     role: "Chief Executive Officer",
     description:
       "As the founder and CEO of LuxFurnish, David brings over a decade of design experience, leading our mission to blend craftsmanship with contemporary living. His leadership inspires innovation and timeless creativity.",
-    video: "/asset/videos/ceo.mp4",
+    video: "/asset/videos/ceo-intro.mp4",
   },
   {
     id: 2,
