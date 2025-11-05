@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
 
 function Categories() {
@@ -32,9 +33,11 @@ function Categories() {
               <p className="text-gray-200 text-sm mb-3">
                 Elegant dining solutions for every occasion.
               </p>
-              <button className="flex items-center gap-2 text-sm text-white font-medium group-hover:translate-x-1 transition-transform duration-300">
+              <Link to = "/categories/dining">
+              <button className="flex items-center gap-2 text-sm text-white font-medium group-hover:translate-x-1 transition-transform duration-300 cursor-pointer">
                 Explore <MoveRight size={16} />
               </button>
+              </Link>
             </div>
           </div>
 
@@ -52,9 +55,11 @@ function Categories() {
               <p className="text-gray-200 text-sm mb-3">
                 Cozy and stylish sofa sets for your living room.
               </p>
-              <button className="flex items-center gap-2 text-sm text-white font-medium group-hover:translate-x-1 transition-transform duration-300">
+              <Link to = "/categories/sofa">
+              <button className="flex items-center gap-2 text-sm text-white font-medium group-hover:translate-x-1 transition-transform duration-300 cursor-pointer">
                 Explore <MoveRight size={16} />
               </button>
+              </Link>
             </div>
           </div>
 
@@ -72,9 +77,11 @@ function Categories() {
               <p className="text-gray-200 text-sm mb-3">
                 Modern and functional bedroom sets for your home.
               </p>
+              <Link to="/categories/bedroom">
               <button className="flex items-center gap-2 text-sm text-white font-medium group-hover:translate-x-1 transition-transform duration-300 cursor-pointer">
                 Explore <MoveRight size={16} />
               </button>
+              </Link>
             </div>
           </div>
         </div>
